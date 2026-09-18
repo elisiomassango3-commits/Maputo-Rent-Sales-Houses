@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maputo Rent &amp; Sales — Compre ou alugue o seu espaço em Maputo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-house"></i></span>
+      <span class="logo-text">
+        <strong>Maputo</strong>
+        <small>Rent &amp; Sales</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio" class="active">Início</a>
+      <a href="#imoveis">Imóveis</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="anunciar.html" class="btn btn-dark-onlight">
+        <i class="fa-solid fa-plus"></i> Anunciar Imóvel
+      </a>
+      <button class="btn btn-outline-light">
+        <i class="fa-regular fa-user"></i> Entrar
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <img src="https://picsum.photos/seed/maputoskyline/1800/900" alt="Vista da cidade de Maputo ao entardecer">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="eyebrow eyebrow-light">Encontre o seu espaço em Maputo</p>
+    <h1>Maputo Rent &amp; Sales</h1>
+    <p class="hero-lead">Alugue ou compre o imóvel ideal com segurança, comodidade e confiança.</p>
+    <p class="hero-script">O seu futuro começa aqui!</p>
+  </div>
+
+  <div class="container">
+    <form class="search-card" id="searchForm">
+      <label class="search-field">
+        <span class="search-field-icon"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="search-field-text">
+          <span class="search-field-label">Localização</span>
+          <select name="bairro">
+            <option value="">Selecione um bairro</option>
+            <option>Sommerschield</option>
+            <option>Polana</option>
+            <option>Mapulene</option>
+            <option>Costa do Sol</option>
+            <option>Matola</option>
+          </select>
+        </span>
+      </label>
+
+      <span class="search-divider" aria-hidden="true"></span>
+
+      <label class="search-field">
+        <span class="search-field-icon"><i class="fa-solid fa-house-chimney"></i></span>
+        <span class="search-field-text">
+          <span class="search-field-label">Tipo de imóvel</span>
+          <select name="tipo">
+            <option value="">Todos</option>
+            <option>Apartamento</option>
+            <option>Casa</option>
+            <option>Escritório</option>
+            <option>Loja</option>
+            <option>Terreno</option>
+          </select>
+        </span>
+      </label>
+
+      <span class="search-divider" aria-hidden="true"></span>
+
+      <label class="search-field">
+        <span class="search-field-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+        <span class="search-field-text">
+          <span class="search-field-label">Faixa de preço</span>
+          <select name="preco">
+            <option value="">Qualquer valor</option>
+            <option>Até 20.000 MT</option>
+            <option>20.000 — 50.000 MT</option>
+            <option>50.000 — 100.000 MT</option>
+            <option>Acima de 100.000 MT</option>
+          </select>
+        </span>
+      </label>
+
+      <button type="submit" class="btn btn-dark search-submit">
+        <i class="fa-solid fa-magnifying-glass"></i> Pesquisar
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== CATEGORIAS ===== -->
+<section class="section" id="categorias">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Navegue por categorias</p>
+        <h2>O que procura?</h2>
+      </div>
+      <p class="section-head-note">Temos opções para todos os estilos de vida. Alugue ou compre o imóvel ideal em Maputo.</p>
+    </div>
+
+    <div class="category-grid">
+      <a href="#imoveis" class="category-card">
+        <i class="fa-solid fa-building-user"></i>
+        <span class="category-title">Apartamentos</span>
+        <span class="category-link">Ver imóveis <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a href="#imoveis" class="category-card">
+        <i class="fa-solid fa-house"></i>
+        <span class="category-title">Casas</span>
+        <span class="category-link">Ver imóveis <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a href="#imoveis" class="category-card">
+        <i class="fa-solid fa-city"></i>
+        <span class="category-title">Escritórios</span>
+        <span class="category-link">Ver imóveis <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a href="#imoveis" class="category-card">
+        <i class="fa-solid fa-store"></i>
+        <span class="category-title">Lojas</span>
+        <span class="category-link">Ver imóveis <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      <a href="#imoveis" class="category-card">
+        <i class="fa-solid fa-layer-group"></i>
+        <span class="category-title">Terrenos</span>
+        <span class="category-link">Ver imóveis <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMÓVEIS EM DESTAQUE ===== -->
+<section class="section section-muted" id="imoveis">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Imóveis em destaque</p>
+        <h2>As melhores opções para você</h2>
+      </div>
+      <a href="#" class="btn btn-dark-outline">Ver todos os imóveis <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="property-grid">
+
+      <article class="property-card">
+        <div class="property-media">
+          <img src="https://picsum.photos/seed/apt-sommerschield/600/450" alt="Apartamento T3 em Sommerschield">
+          <span class="tag tag-rent">Para Alugar</span>
+          <button class="fav-btn" aria-label="Guardar imóvel"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-body">
+          <h3>Apartamento T3 – Sommerschield</h3>
+          <p class="property-location"><i class="fa-solid fa-location-dot"></i> Sommerschield, Maputo</p>
+          <p class="property-specs">
+            <span><i class="fa-solid fa-bed"></i> 3</span>
+            <span><i class="fa-solid fa-bath"></i> 2</span>
+            <span><i class="fa-solid fa-vector-square"></i> 120 m²</span>
+          </p>
+          <div class="property-footer">
+            <span class="property-price">65.000 MT/mês</span>
+            <a href="#" class="property-link" aria-label="Ver imóvel"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card">
+        <div class="property-media">
+          <img src="https://picsum.photos/seed/casa-mapulene/600/450" alt="Moradia T4 em Mapulene">
+          <span class="tag tag-sale">Para Venda</span>
+          <button class="fav-btn" aria-label="Guardar imóvel"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-body">
+          <h3>Moradia T4 – Mapulene</h3>
+          <p class="property-location"><i class="fa-solid fa-location-dot"></i> Mapulene, Maputo</p>
+          <p class="property-specs">
+            <span><i class="fa-solid fa-bed"></i> 4</span>
+            <span><i class="fa-solid fa-bath"></i> 3</span>
+            <span><i class="fa-solid fa-vector-square"></i> 350 m²</span>
+          </p>
+          <div class="property-footer">
+            <span class="property-price">12.500.000 MT</span>
+            <a href="#" class="property-link" aria-label="Ver imóvel"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card">
+        <div class="property-media">
+          <img src="https://picsum.photos/seed/escritorio-centro/600/450" alt="Escritório no Centro da Cidade">
+          <span class="tag tag-rent">Para Alugar</span>
+          <button class="fav-btn" aria-label="Guardar imóvel"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-body">
+          <h3>Escritório – Centro da Cidade</h3>
+          <p class="property-location"><i class="fa-solid fa-location-dot"></i> Centro, Maputo</p>
+          <p class="property-specs">
+            <span><i class="fa-solid fa-vector-square"></i> 80 m²</span>
+          </p>
+          <div class="property-footer">
+            <span class="property-price">45.000 MT/mês</span>
+            <a href="#" class="property-link" aria-label="Ver imóvel"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card">
+        <div class="property-media">
+          <img src="https://picsum.photos/seed/terreno-matola/600/450" alt="Terreno na Matola">
+          <span class="tag tag-sale">Para Venda</span>
+          <button class="fav-btn" aria-label="Guardar imóvel"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-body">
+          <h3>Terreno – Matola</h3>
+          <p class="property-location"><i class="fa-solid fa-location-dot"></i> Matola, Maputo</p>
+          <p class="property-specs">
+            <span><i class="fa-solid fa-vector-square"></i> 500 m²</span>
+          </p>
+          <div class="property-footer">
+            <span class="property-price">2.800.000 MT</span>
+            <a href="#" class="property-link" aria-label="Ver imóvel"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE NÓS ===== -->
+<section class="about" id="sobre">
+  <div class="container about-inner">
+    <div class="about-media">
+      <img src="https://picsum.photos/seed/maputonight/900/1100" alt="Cidade de Maputo à noite">
+    </div>
+
+    <div class="about-text">
+      <p class="eyebrow eyebrow-light">Sobre nós</p>
+      <h2>Mais que imóveis, realizamos sonhos.</h2>
+      <p>A Maputo Rent &amp; Sales é uma plataforma moderna e confiável para quem procura, aluga ou vende imóveis em Maputo. Com tecnologia, <strong>transparência</strong> e acompanhamento próximo, tornamos todo o processo mais simples, seguro e eficiente.</p>
+    </div>
+
+    <ul class="about-features">
+      <li>
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <h4>Segurança</h4>
+          <p>Imóveis verificados e processo transparente.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fa-solid fa-user-check"></i>
+        <div>
+          <h4>Apoio personalizado</h4>
+          <p>Estamos sempre prontos para ajudar.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fa-solid fa-laptop"></i>
+        <div>
+          <h4>Tecnologia</h4>
+          <p>Uma plataforma pensada para uma experiência ainda melhor.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <div>
+          <h4>Futuro em crescimento</h4>
+          <p>Estamos a expandir para mais bairros e novas opções.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contact" id="contacto">
+  <div class="container contact-inner">
+    <div class="contact-text">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2>Encontrou o que procura?</h2>
+      <p>Entre em contacto connosco. Teremos todo o prazer em ajudar!</p>
+    </div>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div>
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+258 84 378 9723 <small>(chamadas &amp; WhatsApp)</small></span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <span class="contact-label">Telefone</span>
+          <span class="contact-value">+258 84 378 9723 <small>(chamadas)</small></span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <span class="contact-label">E-mail</span>
+          <span class="contact-value">maputorent&amp;sales@gmail.com <small>Respondemos o mais rápido possível</small></span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contacto" class="btn btn-dark">Fale Connosco <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <a href="#inicio" class="logo logo-footer">
+      <span class="logo-icon"><i class="fa-solid fa-house"></i></span>
+      <span class="logo-text">
+        <strong>Maputo</strong>
+        <small>Rent &amp; Sales</small>
+      </span>
+    </a>
+
+    <nav class="footer-nav">
+      <a href="#inicio">Início</a>
+      <a href="#imoveis">Imóveis</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#dicas">Dicas</a>
+      <a href="anunciar.html">Anunciar Imóvel</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 Maputo Rent &amp; Sales. Todos os direitos reservados.</p>
+    <p class="footer-tagline">Maputo — mais que uma cidade, um futuro. <i class="fa-regular fa-heart"></i></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
